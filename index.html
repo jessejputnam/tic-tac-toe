@@ -12,14 +12,20 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="gameover__modal hidden">
-      <h3 class="gameover__title">Win</h3>
-      <button type="button" id="btn__newgame">New Game</button>
+    <div class="modal" id="start__modal">
+      <h3 class="start__title">Tic | Tac | Toe</h3>
+      <label for="player1__name" class="hide-restart">"X" Name:</label>
+      <input class="player__input hide-restart" id="player1__name" /><br />
+      <label for="player2__name" class="hide-restart">"O" Name:</label>
+      <input class="player__input hide-restart" id="player2__name" />
+      <button type="button" id="btn__start" class="btn__newgame">Start</button>
     </div>
+
     <header>
       <div class="header__container"></div>
       <!-- end header__container -->
     </header>
+
     <div class="background__area">
       <div class="gameboard"></div>
     </div>
